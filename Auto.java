@@ -8,7 +8,6 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 @Autonomous(name = "AutoRed")
 public class Auto extends LinearOpMode {
 
-    private ElapsedTime runtime = new ElapsedTime();
     Hardware robot = Hardware.getInstance();
 
     public void runOpMode(){

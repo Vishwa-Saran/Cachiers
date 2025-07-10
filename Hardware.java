@@ -25,13 +25,13 @@ public class Hardware {
 
     public void init(HardwareMap hwMap) {
         //initialize motors
-        right = hwMap.get(DcMotor.class, "cm0");
+        right = hwMap.get(DcMotor.class, "cm1");
         right.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         right.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         right.setDirection(DcMotor.Direction.FORWARD);
         right.setPower(0);
 
-        left = hwMap.get(DcMotor.class, "cm1");
+        left = hwMap.get(DcMotor.class, "cm0");
         left.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         left.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         left.setDirection(DcMotor.Direction.REVERSE);
@@ -43,7 +43,7 @@ public class Hardware {
         bucket.setDirection(DcMotor.Direction.FORWARD);
         bucket.setPower(0);
 
-        arm = hwMap.get(DcMotor.class, "cm2");
+        arm = hwMap.get(DcMotor.class, "cm3");
         arm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         arm.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         arm.setDirection(DcMotor.Direction.FORWARD);
